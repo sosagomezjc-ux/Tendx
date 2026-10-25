@@ -1,0 +1,636 @@
+{
+  "balance": 9725.59572788,
+  "bars_processed": 81,
+  "config": {
+    "commission_bps": 1.0,
+    "daily_loss_limit": 0.03,
+    "fast": 7,
+    "max_bars_held": 9,
+    "max_leverage": 2.0,
+    "max_new_trades_per_day": 2,
+    "reward_multiple": 1.7,
+    "risk_fraction": 0.005,
+    "slippage_bps": 2.0,
+    "slow": 24,
+    "spread_bps": 3.0,
+    "total_loss_limit": 0.08
+  },
+  "daily_anchor": 9725.59572788,
+  "daily_index": 13,
+  "equity_currency": "USD_SIM",
+  "events": [
+    {
+      "bar": 26,
+      "planned_risk_cash": 50.0,
+      "side": "BUY",
+      "type": "OPEN"
+    },
+    {
+      "bar": 32,
+      "pnl": -48.22104299,
+      "reason": "STOP",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 36,
+      "planned_risk_cash": 49.75889,
+      "side": "SELL",
+      "type": "OPEN"
+    },
+    {
+      "bar": 37,
+      "pnl": -48.10759723,
+      "reason": "STOP",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 41,
+      "planned_risk_cash": 49.51836,
+      "side": "BUY",
+      "type": "OPEN"
+    },
+    {
+      "bar": 49,
+      "pnl": -47.89416558,
+      "reason": "STOP",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 51,
+      "planned_risk_cash": 49.27889,
+      "side": "BUY",
+      "type": "OPEN"
+    },
+    {
+      "bar": 60,
+      "pnl": 12.744033,
+      "reason": "TIME_EXIT",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 61,
+      "planned_risk_cash": 49.34261,
+      "side": "BUY",
+      "type": "OPEN"
+    },
+    {
+      "bar": 62,
+      "pnl": -47.82052034,
+      "reason": "STOP",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 69,
+      "planned_risk_cash": 49.1035,
+      "side": "BUY",
+      "type": "OPEN"
+    },
+    {
+      "bar": 71,
+      "pnl": -47.58974474,
+      "reason": "STOP",
+      "type": "CLOSE"
+    },
+    {
+      "bar": 76,
+      "planned_risk_cash": 48.86555,
+      "side": "SELL",
+      "type": "OPEN"
+    },
+    {
+      "bar": 77,
+      "pnl": -47.51523424,
+      "reason": "STOP",
+      "type": "CLOSE"
+    }
+  ],
+  "initial_balance": 10000.0,
+  "open_position": null,
+  "origin": "SYNTHETIC_GENERATED",
+  "run_count": 55,
+  "schema": "edgeguard.paper.v1",
+  "snapshots": [
+    {
+      "balance": 10000.0,
+      "equity": 10029.8064,
+      "index": 26,
+      "price": 2168.02498,
+      "time": "2026-01-09T08:00:00+00:00"
+    },
+    {
+      "balance": 10000.0,
+      "equity": 10004.5354,
+      "index": 27,
+      "price": 2157.30856,
+      "time": "2026-01-09T12:00:00+00:00"
+    },
+    {
+      "balance": 10000.0,
+      "equity": 10013.8975,
+      "index": 28,
+      "price": 2161.27869,
+      "time": "2026-01-09T16:00:00+00:00"
+    },
+    {
+      "balance": 10000.0,
+      "equity": 10000.4764,
+      "index": 29,
+      "price": 2155.58731,
+      "time": "2026-01-09T20:00:00+00:00"
+    },
+    {
+      "balance": 10000.0,
+      "equity": 10003.9468,
+      "index": 30,
+      "price": 2157.05898,
+      "time": "2026-01-10T00:00:00+00:00"
+    },
+    {
+      "balance": 10000.0,
+      "equity": 9970.5732,
+      "index": 31,
+      "price": 2142.90658,
+      "time": "2026-01-10T04:00:00+00:00"
+    },
+    {
+      "balance": 9951.779,
+      "equity": 9951.779,
+      "index": 32,
+      "price": 2132.83542,
+      "time": "2026-01-10T08:00:00+00:00"
+    },
+    {
+      "balance": 9951.779,
+      "equity": 9951.779,
+      "index": 33,
+      "price": 2127.38501,
+      "time": "2026-01-10T12:00:00+00:00"
+    },
+    {
+      "balance": 9951.779,
+      "equity": 9951.779,
+      "index": 34,
+      "price": 2117.26454,
+      "time": "2026-01-10T16:00:00+00:00"
+    },
+    {
+      "balance": 9951.779,
+      "equity": 9951.779,
+      "index": 35,
+      "price": 2134.35148,
+      "time": "2026-01-10T20:00:00+00:00"
+    },
+    {
+      "balance": 9951.779,
+      "equity": 9927.1561,
+      "index": 36,
+      "price": 2143.56042,
+      "time": "2026-01-11T00:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9903.6714,
+      "index": 37,
+      "price": 2147.38595,
+      "time": "2026-01-11T04:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9903.6714,
+      "index": 38,
+      "price": 2164.01639,
+      "time": "2026-01-11T08:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9903.6714,
+      "index": 39,
+      "price": 2165.73755,
+      "time": "2026-01-11T12:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9903.6714,
+      "index": 40,
+      "price": 2168.88475,
+      "time": "2026-01-11T16:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9932.1729,
+      "index": 41,
+      "price": 2184.17057,
+      "time": "2026-01-11T20:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9926.0204,
+      "index": 42,
+      "price": 2181.29244,
+      "time": "2026-01-12T00:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9873.0395,
+      "index": 43,
+      "price": 2156.50811,
+      "time": "2026-01-12T04:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9890.5314,
+      "index": 44,
+      "price": 2164.69078,
+      "time": "2026-01-12T08:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9900.2664,
+      "index": 45,
+      "price": 2169.24478,
+      "time": "2026-01-12T12:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9885.0114,
+      "index": 46,
+      "price": 2162.10853,
+      "time": "2026-01-12T16:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9869.4741,
+      "index": 47,
+      "price": 2154.84025,
+      "time": "2026-01-12T20:00:00+00:00"
+    },
+    {
+      "balance": 9903.6714,
+      "equity": 9873.6098,
+      "index": 48,
+      "price": 2156.7749,
+      "time": "2026-01-13T00:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9855.7772,
+      "index": 49,
+      "price": 2133.69802,
+      "time": "2026-01-13T04:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9855.7772,
+      "index": 50,
+      "price": 2160.2821,
+      "time": "2026-01-13T08:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9836.2639,
+      "index": 51,
+      "price": 2152.86798,
+      "time": "2026-01-13T12:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9862.9238,
+      "index": 52,
+      "price": 2165.65498,
+      "time": "2026-01-13T16:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9878.1698,
+      "index": 53,
+      "price": 2172.96754,
+      "time": "2026-01-13T20:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9859.7771,
+      "index": 54,
+      "price": 2164.14573,
+      "time": "2026-01-14T00:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9847.8678,
+      "index": 55,
+      "price": 2158.43361,
+      "time": "2026-01-14T04:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9826.1343,
+      "index": 56,
+      "price": 2148.00944,
+      "time": "2026-01-14T08:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9864.1569,
+      "index": 57,
+      "price": 2166.24643,
+      "time": "2026-01-14T12:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9899.7029,
+      "index": 58,
+      "price": 2183.29555,
+      "time": "2026-01-14T16:00:00+00:00"
+    },
+    {
+      "balance": 9855.7772,
+      "equity": 9884.5051,
+      "index": 59,
+      "price": 2176.00616,
+      "time": "2026-01-14T20:00:00+00:00"
+    },
+    {
+      "balance": 9868.5212,
+      "equity": 9868.5212,
+      "index": 60,
+      "price": 2168.33972,
+      "time": "2026-01-15T00:00:00+00:00"
+    },
+    {
+      "balance": 9868.5212,
+      "equity": 9820.196,
+      "index": 61,
+      "price": 2146.17527,
+      "time": "2026-01-15T04:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 62,
+      "price": 2146.73596,
+      "time": "2026-01-15T08:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 63,
+      "price": 2153.41224,
+      "time": "2026-01-15T12:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 64,
+      "price": 2154.30961,
+      "time": "2026-01-15T16:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 65,
+      "price": 2160.38275,
+      "time": "2026-01-15T20:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 66,
+      "price": 2157.04675,
+      "time": "2026-01-16T00:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 67,
+      "price": 2181.15721,
+      "time": "2026-01-16T04:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9820.7007,
+      "index": 68,
+      "price": 2206.94611,
+      "time": "2026-01-16T08:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9802.2586,
+      "index": 69,
+      "price": 2199.51429,
+      "time": "2026-01-16T12:00:00+00:00"
+    },
+    {
+      "balance": 9820.7007,
+      "equity": 9812.8812,
+      "index": 70,
+      "price": 2204.93958,
+      "time": "2026-01-16T16:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9773.111,
+      "index": 71,
+      "price": 2141.21232,
+      "time": "2026-01-16T20:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9773.111,
+      "index": 72,
+      "price": 2133.28681,
+      "time": "2026-01-17T00:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9773.111,
+      "index": 73,
+      "price": 2129.07705,
+      "time": "2026-01-17T04:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9773.111,
+      "index": 74,
+      "price": 2116.18889,
+      "time": "2026-01-17T08:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9773.111,
+      "index": 75,
+      "price": 2116.96419,
+      "time": "2026-01-17T12:00:00+00:00"
+    },
+    {
+      "balance": 9773.111,
+      "equity": 9742.0764,
+      "index": 76,
+      "price": 2132.07349,
+      "time": "2026-01-17T16:00:00+00:00"
+    },
+    {
+      "balance": 9725.5957,
+      "equity": 9725.5957,
+      "index": 77,
+      "price": 2152.55746,
+      "time": "2026-01-17T20:00:00+00:00"
+    },
+    {
+      "balance": 9725.5957,
+      "equity": 9725.5957,
+      "index": 78,
+      "price": 2141.03219,
+      "time": "2026-01-18T00:00:00+00:00"
+    },
+    {
+      "balance": 9725.5957,
+      "equity": 9725.5957,
+      "index": 79,
+      "price": 2149.57554,
+      "time": "2026-01-18T04:00:00+00:00"
+    },
+    {
+      "balance": 9725.5957,
+      "equity": 9725.5957,
+      "index": 80,
+      "price": 2138.9832,
+      "time": "2026-01-18T08:00:00+00:00"
+    }
+  ],
+  "symbol": "XAUUSD-SIM",
+  "trades": [
+    {
+      "balance_after": 9951.77895701,
+      "entry_bar": 26,
+      "entry_fee": 0.50822266,
+      "entry_fill": 2154.200026,
+      "entry_time": "2026-01-09T08:00:00+00:00",
+      "exit_bar": 32,
+      "exit_fee": 0.50350172,
+      "exit_fill": 2134.189443,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-10T08:00:00+00:00",
+      "initial_equity": 10000.0,
+      "net_pnl": -48.22104299,
+      "planned_risk_cash": 50.0,
+      "side": "BUY",
+      "stop": 2134.936671,
+      "take_profit": 2186.947731,
+      "units": 2.35921757
+    },
+    {
+      "balance_after": 9903.67135978,
+      "entry_bar": 36,
+      "entry_fee": 0.471847,
+      "entry_fill": 2133.604457,
+      "entry_time": "2026-01-11T00:00:00+00:00",
+      "exit_bar": 37,
+      "exit_fee": 0.47656292,
+      "exit_fill": 2154.928965,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-11T04:00:00+00:00",
+      "initial_equity": 9951.778957,
+      "net_pnl": -48.10759723,
+      "planned_risk_cash": 49.758895,
+      "side": "SELL",
+      "stop": 2154.175004,
+      "take_profit": 2098.634527,
+      "units": 2.21150175
+    },
+    {
+      "balance_after": 9855.7771942,
+      "entry_bar": 41,
+      "entry_fee": 0.46400897,
+      "entry_fill": 2169.64386,
+      "entry_time": "2026-01-11T20:00:00+00:00",
+      "exit_bar": 49,
+      "exit_fee": 0.45931189,
+      "exit_fill": 2147.680921,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-13T04:00:00+00:00",
+      "initial_equity": 9903.67136,
+      "net_pnl": -47.89416558,
+      "planned_risk_cash": 49.518357,
+      "side": "BUY",
+      "stop": 2148.432873,
+      "take_profit": 2205.702537,
+      "units": 2.13864118
+    },
+    {
+      "balance_after": 9868.5212272,
+      "entry_bar": 51,
+      "entry_fee": 0.45076126,
+      "entry_fill": 2161.038199,
+      "entry_time": "2026-01-13T12:00:00+00:00",
+      "exit_bar": 60,
+      "exit_fee": 0.45212596,
+      "exit_fill": 2167.580801,
+      "exit_reason": "TIME_EXIT",
+      "exit_time": "2026-01-15T00:00:00+00:00",
+      "initial_equity": 9855.777194,
+      "net_pnl": 12.744033,
+      "planned_risk_cash": 49.278886,
+      "side": "BUY",
+      "stop": 2139.348105,
+      "take_profit": 2197.911358,
+      "units": 2.08585514
+    },
+    {
+      "balance_after": 9820.70070686,
+      "entry_bar": 61,
+      "entry_fee": 0.43483876,
+      "entry_fill": 2169.098639,
+      "entry_time": "2026-01-15T04:00:00+00:00",
+      "exit_bar": 62,
+      "exit_fee": 0.43014321,
+      "exit_fill": 2145.67589,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-15T08:00:00+00:00",
+      "initial_equity": 9868.521227,
+      "net_pnl": -47.82052034,
+      "planned_risk_cash": 49.342606,
+      "side": "BUY",
+      "stop": 2146.427139,
+      "take_profit": 2207.640188,
+      "units": 2.00469797
+    },
+    {
+      "balance_after": 9773.11096212,
+      "entry_bar": 69,
+      "entry_fee": 0.4324598,
+      "entry_fill": 2207.718541,
+      "entry_time": "2026-01-16T12:00:00+00:00",
+      "exit_bar": 71,
+      "exit_fee": 0.42778685,
+      "exit_fill": 2183.86301,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-16T20:00:00+00:00",
+      "initial_equity": 9820.700707,
+      "net_pnl": -47.58974474,
+      "planned_risk_cash": 49.103504,
+      "side": "BUY",
+      "stop": 2184.62763,
+      "take_profit": 2246.97309,
+      "units": 1.95885385
+    },
+    {
+      "balance_after": 9725.59572788,
+      "entry_bar": 76,
+      "entry_fee": 0.38584453,
+      "entry_fill": 2116.223253,
+      "entry_time": "2026-01-17T16:00:00+00:00",
+      "exit_bar": 77,
+      "exit_fee": 0.39051841,
+      "exit_fill": 2141.857901,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-17T20:00:00+00:00",
+      "initial_equity": 9773.110962,
+      "net_pnl": -47.51523424,
+      "planned_risk_cash": 48.865555,
+      "side": "SELL",
+      "stop": 2141.108513,
+      "take_profit": 2073.918309,
+      "units": 1.82326948
+    }
+  ],
+  "trades_today": 0
+}

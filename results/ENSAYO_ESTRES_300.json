@@ -1,0 +1,30 @@
+{
+  "data": "100% PRECIOS SINTÉTICOS",
+  "period": "300 barras de 4h ficticias",
+  "results": {
+    "trades": 40,
+    "wins": 9,
+    "losses": 31,
+    "net_realized": -799.97,
+    "balance": 9200.03,
+    "equity_mark": 9200.03,
+    "win_rate_pct": 22.5,
+    "profit_factor": 0.295,
+    "max_closed_balance_drawdown_pct": 8.0,
+    "open_position": false
+  },
+  "audit": {
+    "passed": true,
+    "errors": [],
+    "checks": [
+      "conciliación de P&L",
+      "límites de riesgo de entrada",
+      "coherencia temporal",
+      "balance y equity",
+      "integridad de operaciones"
+    ],
+    "origin": "SYNTHETIC_GENERATED",
+    "timestamp_utc": "2026-10-25T15:04:33.509793+00:00"
+  },
+  "purpose": "Prueba de límite máximo; no prueba de ventaja financiera"
+}

@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "conciliación de P&L",
+    "límites de riesgo de entrada",
+    "coherencia temporal",
+    "balance y equity",
+    "integridad de operaciones"
+  ],
+  "errors": [],
+  "origin": "SYNTHETIC_GENERATED",
+  "passed": true,
+  "timestamp_utc": "2026-10-25T15:04:35.555155+00:00"
+}

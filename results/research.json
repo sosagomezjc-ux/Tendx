@@ -1,0 +1,7 @@
+{
+  "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
+  "proposed": null,
+  "reason": "Sin muestra suficiente; no se ajusta estrategia.",
+  "status": "DATOS_INSUFICIENTES",
+  "trials": []
+}

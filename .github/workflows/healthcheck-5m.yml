@@ -1,0 +1,38 @@
+# EDGEGUARD: every-five-minute QA check after the repo is deployed.
+# Does NOT create trades, rewrite history, change risk rules, or publish claims.
+name: EDGEGUARD Healthcheck (5m)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '2-59/5 * * * *' # Minutes :02, :07, ... :57 UTC; scheduling is best effort.
+permissions:
+  contents: read
+concurrency:
+  group: edgeguard-healthcheck
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Reconcile published simulation ledger
+        run: python edgeguard_lab.py audit
+      - name: Verify published metadata is labeled as simulation
+        run: |
+          python - <<'PYTEST'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('site/results.json').read_text(encoding='utf-8'))
+          assert report['kind'] in ('SIMULATION_SYNTHETIC_NOT_BROKER','USER_IMPORTED_OHLC_UNVERIFIED_BACKTEST')
+          assert report['audit']['passed'] is True
+          assert 'SIMULACIÓN' in Path('site/index.html').read_text(encoding='utf-8')
+          print('Etiqueta y auditoría verificadas; cero órdenes reales.')
+          PYTEST

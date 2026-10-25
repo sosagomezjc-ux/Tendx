@@ -1,0 +1,38 @@
+{
+  "audit": {
+    "checks": [
+      "conciliación de P&L",
+      "límites de riesgo de entrada",
+      "coherencia temporal",
+      "balance y equity",
+      "integridad de operaciones"
+    ],
+    "errors": [],
+    "origin": "SYNTHETIC_GENERATED",
+    "passed": true,
+    "timestamp_utc": "2026-10-25T15:04:35.555155+00:00"
+  },
+  "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
+  "ledger_sha256": "e51fdc158465ebf1840ddb71b5ced5964d77ea6e59a9d14634501f323e054646",
+  "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
+  "processed_bars": 81,
+  "research": {
+    "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
+    "proposed": null,
+    "reason": "Sin muestra suficiente; no se ajusta estrategia.",
+    "status": "DATOS_INSUFICIENTES",
+    "trials": []
+  },
+  "results": {
+    "balance": 9725.6,
+    "equity_mark": 9725.6,
+    "losses": 6,
+    "max_closed_balance_drawdown_pct": 2.74,
+    "net_realized": -274.4,
+    "open_position": false,
+    "profit_factor": 0.044,
+    "trades": 7,
+    "win_rate_pct": 14.29,
+    "wins": 1
+  }
+}

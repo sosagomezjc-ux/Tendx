@@ -1,0 +1,59 @@
+name: EDGEGUARD Autonomous Lab · simulated operations and verified reports
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 1,7,13,19 * * *'  # UTC; opportunistic, not guaranteed to the minute
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: edgeguard-lab
+  cancel-in-progress: false
+jobs:
+  simulated-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independent QA tests BEFORE operations
+        run: python -m unittest discover -s tests -v
+      - name: Simulate one new synthetic candle and independently audit
+        shell: bash
+        run: |
+          if test -f state/account.json; then python edgeguard_lab.py cycle; else python edgeguard_lab.py demo --bars 80; fi
+          python edgeguard_lab.py audit
+      - name: Draft optional model summaries (not published automatically)
+        if: ${{ vars.USE_LLM_DRAFTS == 'true' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EDGEGUARD_LLM_MODEL: gpt-4.1-mini
+        run: python ai_agents.py
+      - name: Store auditable state and website in repo
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add state results site
+          if ! git diff --staged --quiet; then
+            git commit -m "lab: synthetic paper trade, independent audit, published results"
+            git push
+          fi
+      - name: Prepare Pages (optional)
+        if: ${{ vars.ENABLE_PAGES == 'true' }}
+        uses: actions/configure-pages@v5
+      - name: Upload publicly labeled website
+        if: ${{ vars.ENABLE_PAGES == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Publish own demo website
+        if: ${{ vars.ENABLE_PAGES == 'true' }}
+        uses: actions/deploy-pages@v4
