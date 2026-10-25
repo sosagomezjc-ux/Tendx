@@ -1,0 +1,36 @@
+name: Pull request checks (read-only)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'edgeguard_lab.py'
+      - 'ai_agents.py'
+      - 'tests/**'
+      - '.github/workflows/pr-validation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check Python syntax
+        run: python -m compileall -q edgeguard_lab.py ai_agents.py tests
+      - name: Run unit tests (synthetic simulation only)
+        run: python -m unittest discover -s tests -v
