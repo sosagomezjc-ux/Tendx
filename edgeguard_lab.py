@@ -63,7 +63,7 @@ def load_market_csv(path):
                 if timestamp.tzinfo is None:
                     timestamp=timestamp.replace(tzinfo=dt.timezone.utc)
                 timestamps.append(timestamp.astimezone(dt.timezone.utc))
-            except (KeyError,ValueError) as exc:
+            except (KeyError, ValueError, TypeError, AttributeError) as exc:
                 raise ValueError(f'Fila CSV {i+2} inválida: {exc}') from exc
             rows.append(row)
     if len(rows)<40: raise ValueError('Se necesitan al menos 40 barras OHLC.')
