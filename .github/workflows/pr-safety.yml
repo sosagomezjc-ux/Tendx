@@ -1,0 +1,26 @@
+name: EDGEGUARD PR safety checks
+on:
+  pull_request:
+    paths:
+      - 'edgeguard_lab.py'
+      - 'ai_agents.py'
+      - 'tests/**'
+      - '.github/workflows/pr-safety.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Audit existing synthetic ledger
+        run: python edgeguard_lab.py audit
