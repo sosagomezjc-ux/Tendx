@@ -2,6 +2,11 @@ name: EDGEGUARD Autonomous Lab · simulated operations and verified reports
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/lab-24h.yml'
+      - 'edgeguard_lab.py'
+      - 'ai_agents.py'
+      - 'tests/**'
   workflow_dispatch:
   schedule:
     - cron: '23 1,7,13,19 * * *'  # UTC; opportunistic, not guaranteed to the minute

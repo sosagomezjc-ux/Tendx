@@ -2,19 +2,19 @@
 
 Repositorio objetivo: https://github.com/sosagomezjc-ux/Tendx
 
-## Estado actualizado (25-10-2026)
+## Estado comprobado (25-10-2026)
 
-- Se autorizó la instalación GitHub de ChatGPT y se confirmó escritura en `sosagomezjc-ux/Tendx`.
-- El repositorio se inicializó con un README, y el despliegue de los archivos del laboratorio está en curso.
-- Tras publicar el código, GitHub Actions ejecuta pruebas y auditoría con cada `push` a `main`, además de los ciclos programados.
-- GitHub Pages es opcional y requiere activación explícita de `ENABLE_PAGES=true`.
+- Repositorio público existente, pero sin contenido inicial.
+- La integración de GitHub para ChatGPT devuelve `403 Resource not accessible by integration` al intentar crear un archivo.
+- No se ha desplegado ni activado GitHub Actions o GitHub Pages.
+- El paquete sí se ejecuta localmente y pasó 14 pruebas automatizadas.
 
-## Verificación después de instalar
+## Método recomendado: autorizar escritura a ChatGPT
 
-1. En `Tendx`, abre la pestaña **Actions** y revisa los flujos de healthcheck y laboratorio.
-2. Confirma que el healthcheck supera 14 pruebas y audita la cuenta sintética.
-3. Comprueba que `site/results.json` identifica la procedencia `SIMULATION_SYNTHETIC_NOT_BROKER`.
-4. Para publicar el sitio, configura Pages con origen GitHub Actions y variable `ENABLE_PAGES=true`.
+1. En GitHub, abre **Settings > Applications** y revisa las autorizaciones/instalaciones relacionadas con ChatGPT/GitHub. Si la autorización está limitada por repositorio, selecciona `sosagomezjc-ux/Tendx` y concede acceso al contenido del repositorio.
+2. Si no aparece la integración, revisa **Settings > Plugins > GitHub** en ChatGPT y vuelve a conectarla con la cuenta correcta. Esta conexión debe permitir operaciones de escritura; no basta con leer repositorios.
+3. En `Tendx`, si el repositorio sigue vacío, crea un archivo README desde la pestaña Code (Add file > Create new file, nombre `README.md`), lo que inicializa la rama `main`.
+4. Comprueba que la integración pueda crear o actualizar un archivo. Después sube el proyecto completo respetando carpetas, especialmente `.github/workflows/lab-24h.yml`.
 
 ## Método alternativo, sin permiso para ChatGPT
 

@@ -1,9 +1,6 @@
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 .env
-.env.*
-!.env.example
-*.pem
-*.key
-.pytest_cache/
-.DS_Store
+*.secret
+*.log
