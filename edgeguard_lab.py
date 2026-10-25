@@ -49,6 +49,7 @@ def synthetic_market(n=1200, seed=SEED):
 def load_market_csv(path):
     """User-supplied OHLC: input has no verified provenance; explicitly labeled."""
     rows=[]
+    timestamps=[]
     with open(path, newline='', encoding='utf-8-sig') as f:
         for i,r in enumerate(csv.DictReader(f)):
             try:
@@ -56,12 +57,17 @@ def load_market_csv(path):
                      'low':float(r['low']), 'close':float(r['close'])}
                 if not all(math.isfinite(row[k]) and row[k]>0 for k in ['open','high','low','close']): raise ValueError('no finite price')
                 if row['low']>min(row['open'],row['close']) or row['high']<max(row['open'],row['close']): raise ValueError('OHLC inconsistent')
-                dt.datetime.fromisoformat(row['time'].replace('Z','+00:00'))
+                timestamp=dt.datetime.fromisoformat(row['time'].replace('Z','+00:00'))
+                # Preserve legacy naive CSV timestamps by treating them as UTC.
+                # Compare actual instants, not strings: ISO offsets can sort differently.
+                if timestamp.tzinfo is None:
+                    timestamp=timestamp.replace(tzinfo=dt.timezone.utc)
+                timestamps.append(timestamp.astimezone(dt.timezone.utc))
             except (KeyError,ValueError) as exc:
                 raise ValueError(f'Fila CSV {i+2} inválida: {exc}') from exc
             rows.append(row)
     if len(rows)<40: raise ValueError('Se necesitan al menos 40 barras OHLC.')
-    if any(rows[i]['time']<=rows[i-1]['time'] for i in range(1,len(rows))):
+    if any(timestamps[i]<=timestamps[i-1] for i in range(1,len(timestamps))):
         raise ValueError('Fechas no ordenadas o duplicadas.')
     return rows
 
