@@ -1,4 +1,5 @@
 """Malformed CSV inputs should fail with actionable row errors, not raw exceptions."""
+import datetime as dt
 import tempfile
 import unittest
 from pathlib import Path
@@ -11,8 +12,9 @@ class IncompleteCsvRowTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "incomplete.csv"
             lines = ["time,open,high,low,close"]
+            start = dt.datetime(2026, 1, 1, tzinfo=dt.timezone.utc)
             lines.extend(
-                f"2026-01-01T{i:02d}:00:00+00:00,100,102,98,101"
+                f"{(start + dt.timedelta(hours=i)).isoformat()},100,102,98,101"
                 for i in range(40)
             )
             lines[12] = row  # Data row 12; actual CSV line 13.
