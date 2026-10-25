@@ -1,0 +1,66 @@
+name: Gemini read-only review (manual)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check Gemini secret availability
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::GEMINI_API_KEY is not configured"
+            exit 1
+          fi
+      - name: Gemini review (read-only; synthetic data only)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, urllib.request, urllib.error
+          root = pathlib.Path(".")
+          paths = [pathlib.Path("README.md"), pathlib.Path("edgeguard_lab.py")]
+          snippets = []
+          for p in paths:
+              if p.is_file():
+                  snippets.append(f"FILE: {p}\n" + p.read_text(encoding="utf-8")[:12000])
+          prompt = ("Review this SYNTHETIC-SIMULATION-only Python project. "
+                    "Give up to five specific stability, testing, security or UX improvements. "
+                    "Do not claim real trading or live performance. Do not request secrets. "
+                    "Do not execute code or modify files.\n\n" + "\n\n".join(snippets))
+          payload = json.dumps({"contents":[{"parts":[{"text":prompt}]}],
+                                "generationConfig":{"maxOutputTokens":1200}}).encode()
+          url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+          request = urllib.request.Request(url, data=payload,
+              headers={"Content-Type":"application/json", "x-goog-api-key":os.environ["GEMINI_API_KEY"]},
+              method="POST")
+          try:
+              with urllib.request.urlopen(request, timeout=70) as response:
+                  result = json.load(response)
+          except urllib.error.HTTPError as exc:
+              print(f"Gemini API returned HTTP {exc.code}; no response body logged")
+              raise SystemExit(1)
+          text = "\n".join(part.get("text","") for candidate in result.get("candidates",[])
+                           for part in candidate.get("content",{}).get("parts",[]))
+          if not text.strip():
+              raise SystemExit("Gemini returned no review")
+          out = pathlib.Path("gemini-review.md")
+          out.write_text("# Gemini review — suggestions only\n\n"
+                         "**Synthetic simulation. Not investment advice.**\n\n" + text,
+                         encoding="utf-8")
+          print("Review generated successfully; available as workflow artifact")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gemini-readonly-review
+          path: gemini-review.md
+          retention-days: 7
