@@ -1,6 +1,6 @@
 {
   "balance": 9659.47394526,
-  "bars_processed": 106,
+  "bars_processed": 107,
   "config": {
     "commission_bps": 1.0,
     "daily_loss_limit": 0.03,
@@ -155,7 +155,7 @@
   "initial_balance": 10000.0,
   "open_position": null,
   "origin": "SYNTHETIC_GENERATED",
-  "run_count": 80,
+  "run_count": 81,
   "schema": "edgeguard.paper.v1",
   "snapshots": [
     {
@@ -717,6 +717,13 @@
       "index": 105,
       "price": 2179.39368,
       "time": "2026-01-22T12:00:00+00:00"
+    },
+    {
+      "balance": 9659.4739,
+      "equity": 9659.4739,
+      "index": 106,
+      "price": 2171.13383,
+      "time": "2026-01-22T16:00:00+00:00"
     }
   ],
   "symbol": "XAUUSD-SIM",
