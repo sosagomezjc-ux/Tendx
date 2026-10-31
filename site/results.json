@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-10-31T02:10:57.493306+00:00"
+    "timestamp_utc": "2026-10-31T08:06:27.553448+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "9a839f5c6e8ded2d18ac8afe8730c1293462fdab7e8756600643eb1491a6cfce",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 107,
+  "processed_bars": 108,
   "research": {
     "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
     "proposed": null,
@@ -25,11 +25,11 @@
   },
   "results": {
     "balance": 9659.47,
-    "equity_mark": 9659.47,
+    "equity_mark": 9674.99,
     "losses": 9,
     "max_closed_balance_drawdown_pct": 3.69,
     "net_realized": -340.53,
-    "open_position": false,
+    "open_position": true,
     "profit_factor": 0.207,
     "trades": 11,
     "win_rate_pct": 18.18,

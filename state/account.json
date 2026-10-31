@@ -1,6 +1,6 @@
 {
   "balance": 9659.47394526,
-  "bars_processed": 107,
+  "bars_processed": 108,
   "config": {
     "commission_bps": 1.0,
     "daily_loss_limit": 0.03,
@@ -150,12 +150,29 @@
       "pnl": -47.63394316,
       "reason": "STOP",
       "type": "CLOSE"
+    },
+    {
+      "bar": 107,
+      "planned_risk_cash": 48.29737,
+      "side": "SELL",
+      "type": "OPEN"
     }
   ],
   "initial_balance": 10000.0,
-  "open_position": null,
+  "open_position": {
+    "entry_bar": 107,
+    "entry_fee": 0.26689057,
+    "entry_fill": 2170.373933,
+    "entry_time": "2026-01-22T20:00:00+00:00",
+    "initial_equity": 9659.473945,
+    "planned_risk_cash": 48.29737,
+    "side": "SELL",
+    "stop": 2207.679589,
+    "take_profit": 2106.954318,
+    "units": 1.22969854
+  },
   "origin": "SYNTHETIC_GENERATED",
-  "run_count": 81,
+  "run_count": 82,
   "schema": "edgeguard.paper.v1",
   "snapshots": [
     {
@@ -724,6 +741,13 @@
       "index": 106,
       "price": 2171.13383,
       "time": "2026-01-22T16:00:00+00:00"
+    },
+    {
+      "balance": 9659.4739,
+      "equity": 9674.9868,
+      "index": 107,
+      "price": 2156.57118,
+      "time": "2026-01-22T20:00:00+00:00"
     }
   ],
   "symbol": "XAUUSD-SIM",
@@ -938,5 +962,5 @@
       "units": 1.16975319
     }
   ],
-  "trades_today": 1
+  "trades_today": 2
 }
