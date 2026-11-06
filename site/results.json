@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-06T08:27:46.103792+00:00"
+    "timestamp_utc": "2026-11-06T14:28:34.213906+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
-  "ledger_sha256": "eb4df8477537a49ad0c8dd99c7b9b744c7945dc645329b4e81e2029da3588373",
+  "ledger_sha256": "4285d58d368017d5f3fe493bcf823fef4403d231bc41dbb3b925feb41af68846",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 132,
+  "processed_bars": 133,
   "research": {
     "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
     "proposed": null,
@@ -24,15 +24,15 @@
     "trials": []
   },
   "results": {
-    "balance": 9588.9,
-    "equity_mark": 9563.03,
-    "losses": 11,
-    "max_closed_balance_drawdown_pct": 4.11,
-    "net_realized": -411.1,
-    "open_position": true,
-    "profit_factor": 0.178,
-    "trades": 13,
-    "win_rate_pct": 15.38,
+    "balance": 9542.22,
+    "equity_mark": 9542.22,
+    "losses": 12,
+    "max_closed_balance_drawdown_pct": 4.58,
+    "net_realized": -457.78,
+    "open_position": false,
+    "profit_factor": 0.163,
+    "trades": 14,
+    "win_rate_pct": 14.29,
     "wins": 2
   }
 }
