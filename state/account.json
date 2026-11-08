@@ -1,6 +1,6 @@
 {
-  "balance": 9616.75699872,
-  "bars_processed": 138,
+  "balance": 9569.66470826,
+  "bars_processed": 139,
   "config": {
     "commission_bps": 1.0,
     "daily_loss_limit": 0.03,
@@ -15,8 +15,8 @@
     "spread_bps": 3.0,
     "total_loss_limit": 0.08
   },
-  "daily_anchor": 9563.03368554918,
-  "daily_index": 22,
+  "daily_anchor": 9610.184075500143,
+  "daily_index": 23,
   "equity_currency": "USD_SIM",
   "events": [
     {
@@ -204,23 +204,18 @@
       "planned_risk_cash": 48.08378,
       "side": "SELL",
       "type": "OPEN"
+    },
+    {
+      "bar": 138,
+      "pnl": -47.09229046,
+      "reason": "STOP",
+      "type": "CLOSE"
     }
   ],
   "initial_balance": 10000.0,
-  "open_position": {
-    "entry_bar": 137,
-    "entry_fee": 0.28331293,
-    "entry_fill": 2059.195789,
-    "entry_time": "2026-01-27T20:00:00+00:00",
-    "initial_equity": 9616.756999,
-    "planned_risk_cash": 48.083785,
-    "side": "SELL",
-    "stop": 2092.276236,
-    "take_profit": 2002.959029,
-    "units": 1.37584258
-  },
+  "open_position": null,
   "origin": "SYNTHETIC_GENERATED",
-  "run_count": 112,
+  "run_count": 113,
   "schema": "edgeguard.paper.v1",
   "snapshots": [
     {
@@ -1006,6 +1001,13 @@
       "index": 137,
       "price": 2062.8389,
       "time": "2026-01-27T20:00:00+00:00"
+    },
+    {
+      "balance": 9569.6647,
+      "equity": 9569.6647,
+      "index": 138,
+      "price": 2092.71543,
+      "time": "2026-01-28T00:00:00+00:00"
     }
   ],
   "symbol": "XAUUSD-SIM",
@@ -1294,7 +1296,26 @@
       "stop": 2129.894989,
       "take_profit": 2049.364627,
       "units": 1.50368008
+    },
+    {
+      "balance_after": 9569.66470826,
+      "entry_bar": 137,
+      "entry_fee": 0.28331293,
+      "entry_fill": 2059.195789,
+      "entry_time": "2026-01-27T20:00:00+00:00",
+      "exit_bar": 138,
+      "exit_fee": 0.28796503,
+      "exit_fill": 2093.008533,
+      "exit_reason": "STOP",
+      "exit_time": "2026-01-28T00:00:00+00:00",
+      "initial_equity": 9616.756999,
+      "net_pnl": -47.09229046,
+      "planned_risk_cash": 48.083785,
+      "side": "SELL",
+      "stop": 2092.276236,
+      "take_profit": 2002.959029,
+      "units": 1.37584258
     }
   ],
-  "trades_today": 2
+  "trades_today": 0
 }
