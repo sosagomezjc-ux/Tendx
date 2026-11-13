@@ -340,5 +340,24 @@
     "stop": 2127.062955,
     "take_profit": 2029.943917,
     "units": 1.2573597
+  },
+  {
+    "balance_after": 9497.93880931,
+    "entry_bar": 155,
+    "entry_fee": 0.30634252,
+    "entry_fill": 2071.884666,
+    "entry_time": "2026-01-30T20:00:00+00:00",
+    "exit_bar": 158,
+    "exit_fee": 0.31094588,
+    "exit_fill": 2103.018525,
+    "exit_reason": "STOP",
+    "exit_time": "2026-01-31T08:00:00+00:00",
+    "initial_equity": 9544.589668,
+    "net_pnl": -46.6508583,
+    "planned_risk_cash": 47.722948,
+    "side": "SELL",
+    "stop": 2102.282726,
+    "take_profit": 2020.207964,
+    "units": 1.47856936
   }
 ]
