@@ -1,6 +1,6 @@
 {
   "balance": 9571.98466431,
-  "bars_processed": 168,
+  "bars_processed": 169,
   "config": {
     "commission_bps": 1.0,
     "daily_loss_limit": 0.03,
@@ -15,8 +15,8 @@
     "spread_bps": 3.0,
     "total_loss_limit": 0.08
   },
-  "daily_anchor": 9516.555917211375,
-  "daily_index": 27,
+  "daily_anchor": 9585.830745478035,
+  "daily_index": 28,
   "equity_currency": "USD_SIM",
   "events": [
     {
@@ -280,7 +280,7 @@
     "units": 1.39845433
   },
   "origin": "SYNTHETIC_GENERATED",
-  "run_count": 142,
+  "run_count": 143,
   "schema": "edgeguard.paper.v1",
   "snapshots": [
     {
@@ -1276,6 +1276,13 @@
       "index": 167,
       "price": 2192.66937,
       "time": "2026-02-01T20:00:00+00:00"
+    },
+    {
+      "balance": 9571.9847,
+      "equity": 9592.1852,
+      "index": 168,
+      "price": 2197.21534,
+      "time": "2026-02-02T00:00:00+00:00"
     }
   ],
   "symbol": "XAUUSD-SIM",
@@ -1661,5 +1668,5 @@
       "units": 1.50188786
     }
   ],
-  "trades_today": 1
+  "trades_today": 0
 }
