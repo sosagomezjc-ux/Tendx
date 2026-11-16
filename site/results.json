@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-16T02:30:34.031414+00:00"
+    "timestamp_utc": "2026-11-16T09:57:09.661382+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "6d7030b0f8b7885fa0e3afadaa7049354904ba3dc43042657bc910c1a9e6f5a4",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 171,
+  "processed_bars": 172,
   "research": {
     "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
     "proposed": null,
