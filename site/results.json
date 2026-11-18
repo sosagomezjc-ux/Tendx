@@ -10,22 +10,75 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-18T02:24:36.161389+00:00"
+    "timestamp_utc": "2026-11-18T08:33:34.861243+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "6d7030b0f8b7885fa0e3afadaa7049354904ba3dc43042657bc910c1a9e6f5a4",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 179,
+  "processed_bars": 180,
   "research": {
-    "holdout_note": "No se usan barras futuras. No se extrapolan resultados.",
+    "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": null,
-    "reason": "Sin muestra suficiente; no se ajusta estrategia.",
-    "status": "DATOS_INSUFICIENTES",
-    "trials": []
+    "reason": "Las variantes se investigan offline. No son evidencia de ventaja futura; no se modifica la estrategia activa.",
+    "status": "SIN_CAMBIO",
+    "trials": [
+      {
+        "fast": 7,
+        "holdout": {
+          "dd_pct": 1.67,
+          "net": -139.02,
+          "trades": 10
+        },
+        "slow": 24,
+        "train": {
+          "net": -363.99,
+          "trades": 12
+        }
+      },
+      {
+        "fast": 5,
+        "holdout": {
+          "dd_pct": 1.64,
+          "net": -85.55,
+          "trades": 11
+        },
+        "slow": 22,
+        "train": {
+          "net": -585.54,
+          "trades": 15
+        }
+      },
+      {
+        "fast": 10,
+        "holdout": {
+          "dd_pct": 1.92,
+          "net": -164.49,
+          "trades": 10
+        },
+        "slow": 32,
+        "train": {
+          "net": -451.24,
+          "trades": 12
+        }
+      },
+      {
+        "fast": 8,
+        "holdout": {
+          "dd_pct": 1.93,
+          "net": -164.47,
+          "trades": 10
+        },
+        "slow": 28,
+        "train": {
+          "net": -434.17,
+          "trades": 13
+        }
+      }
+    ]
   },
   "results": {
     "balance": 9525.19,
-    "equity_mark": 9493.21,
+    "equity_mark": 9518.57,
     "losses": 16,
     "max_closed_balance_drawdown_pct": 5.02,
     "net_realized": -474.81,
