@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-19T08:37:06.291538+00:00"
+    "timestamp_utc": "2026-11-19T14:28:55.712433+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "60a5124df55703e3eff95ea7634d31730e4a287978146e4f633c3c257f249325",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 184,
+  "processed_bars": 185,
   "research": {
     "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": null,
@@ -25,9 +25,9 @@
       {
         "fast": 7,
         "holdout": {
-          "dd_pct": 1.87,
-          "net": -187.42,
-          "trades": 11
+          "dd_pct": 1.39,
+          "net": -139.12,
+          "trades": 10
         },
         "slow": 24,
         "train": {
@@ -52,8 +52,8 @@
         "fast": 10,
         "holdout": {
           "dd_pct": 1.46,
-          "net": -115.92,
-          "trades": 9
+          "net": -37.15,
+          "trades": 10
         },
         "slow": 32,
         "train": {
@@ -64,9 +64,9 @@
       {
         "fast": 8,
         "holdout": {
-          "dd_pct": 1.46,
-          "net": -115.93,
-          "trades": 9
+          "dd_pct": 1.94,
+          "net": -164.43,
+          "trades": 10
         },
         "slow": 28,
         "train": {
