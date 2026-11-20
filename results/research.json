@@ -1,15 +1,18 @@
 {
   "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
-  "proposed": null,
+  "proposed": {
+    "fast": 10,
+    "slow": 32
+  },
   "reason": "Las variantes se investigan offline. No son evidencia de ventaja futura; no se modifica la estrategia activa.",
-  "status": "SIN_CAMBIO",
+  "status": "SUGERENCIA_SIN_AUTOAPLICACION",
   "trials": [
     {
       "fast": 7,
       "holdout": {
-        "dd_pct": 1.39,
-        "net": -139.12,
-        "trades": 10
+        "dd_pct": 2.6,
+        "net": -259.85,
+        "trades": 12
       },
       "slow": 24,
       "train": {
@@ -20,9 +23,9 @@
     {
       "fast": 5,
       "holdout": {
-        "dd_pct": 1.46,
-        "net": -139.23,
-        "trades": 10
+        "dd_pct": 2.12,
+        "net": -212.01,
+        "trades": 11
       },
       "slow": 22,
       "train": {
@@ -33,8 +36,8 @@
     {
       "fast": 10,
       "holdout": {
-        "dd_pct": 1.46,
-        "net": -37.1,
+        "dd_pct": 0.97,
+        "net": -37.25,
         "trades": 10
       },
       "slow": 32,
@@ -46,9 +49,9 @@
     {
       "fast": 8,
       "holdout": {
-        "dd_pct": 1.46,
-        "net": -115.95,
-        "trades": 9
+        "dd_pct": 1.64,
+        "net": -164.45,
+        "trades": 10
       },
       "slow": 28,
       "train": {
