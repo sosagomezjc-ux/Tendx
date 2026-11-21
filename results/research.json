@@ -10,9 +10,9 @@
     {
       "fast": 7,
       "holdout": {
-        "dd_pct": 3.08,
-        "net": -307.71,
-        "trades": 13
+        "dd_pct": 2.6,
+        "net": -259.92,
+        "trades": 12
       },
       "slow": 24,
       "train": {
@@ -24,7 +24,7 @@
       "fast": 5,
       "holdout": {
         "dd_pct": 2.6,
-        "net": -260.11,
+        "net": -260.03,
         "trades": 12
       },
       "slow": 22,
@@ -42,16 +42,16 @@
       },
       "slow": 32,
       "train": {
-        "net": -451.24,
-        "trades": 12
+        "net": -497.89,
+        "trades": 13
       }
     },
     {
       "fast": 8,
       "holdout": {
-        "dd_pct": 2.13,
-        "net": -212.74,
-        "trades": 11
+        "dd_pct": 1.65,
+        "net": -164.57,
+        "trades": 10
       },
       "slow": 28,
       "train": {
