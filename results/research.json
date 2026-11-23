@@ -37,7 +37,7 @@
       "fast": 10,
       "holdout": {
         "dd_pct": 0.98,
-        "net": -55.14,
+        "net": -55.11,
         "trades": 12
       },
       "slow": 32,
