@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-23T02:28:01.156749+00:00"
+    "timestamp_utc": "2026-11-23T08:51:45.922449+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "30dd3c04255e64ec3f7c5d87ba1c4ffbd9a3b03a207278f65b4adddfccdb4d5e",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 199,
+  "processed_bars": 200,
   "research": {
     "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": {
@@ -28,9 +28,9 @@
       {
         "fast": 7,
         "holdout": {
-          "dd_pct": 3.08,
-          "net": -307.63,
-          "trades": 13
+          "dd_pct": 2.6,
+          "net": -259.94,
+          "trades": 12
         },
         "slow": 24,
         "train": {
@@ -41,9 +41,9 @@
       {
         "fast": 5,
         "holdout": {
-          "dd_pct": 2.6,
-          "net": -260.03,
-          "trades": 12
+          "dd_pct": 2.43,
+          "net": -212.1,
+          "trades": 11
         },
         "slow": 22,
         "train": {
@@ -54,8 +54,8 @@
       {
         "fast": 10,
         "holdout": {
-          "dd_pct": 1.44,
-          "net": -134.88,
+          "dd_pct": 0.98,
+          "net": -55.14,
           "trades": 12
         },
         "slow": 32,
@@ -67,9 +67,9 @@
       {
         "fast": 8,
         "holdout": {
-          "dd_pct": 2.13,
-          "net": -212.87,
-          "trades": 11
+          "dd_pct": 1.65,
+          "net": -164.57,
+          "trades": 10
         },
         "slow": 28,
         "train": {
@@ -81,7 +81,7 @@
   },
   "results": {
     "balance": 9385.53,
-    "equity_mark": 9384.15,
+    "equity_mark": 9395.72,
     "losses": 19,
     "max_closed_balance_drawdown_pct": 6.14,
     "net_realized": -614.47,
