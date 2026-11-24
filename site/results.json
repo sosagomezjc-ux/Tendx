@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-24T02:28:20.204204+00:00"
+    "timestamp_utc": "2026-11-24T08:40:00.884005+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
-  "ledger_sha256": "f25a224181064fc7a763e8bf247c0c092c6aa8780c33d563b44a20fb6db52ab7",
+  "ledger_sha256": "60206500a5c315303b69b59b77ed562cdcf70c261184b52a375a6a7490f49342",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 203,
+  "processed_bars": 204,
   "research": {
     "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": {
@@ -28,8 +28,8 @@
       {
         "fast": 7,
         "holdout": {
-          "dd_pct": 2.6,
-          "net": -203.89,
+          "dd_pct": 2.12,
+          "net": -204.0,
           "trades": 13
         },
         "slow": 24,
@@ -42,8 +42,8 @@
         "fast": 5,
         "holdout": {
           "dd_pct": 2.43,
-          "net": -155.78,
-          "trades": 12
+          "net": -204.11,
+          "trades": 13
         },
         "slow": 22,
         "train": {
@@ -55,8 +55,8 @@
         "fast": 10,
         "holdout": {
           "dd_pct": 0.98,
-          "net": -55.11,
-          "trades": 12
+          "net": -6.41,
+          "trades": 11
         },
         "slow": 32,
         "train": {
@@ -68,8 +68,8 @@
         "fast": 8,
         "holdout": {
           "dd_pct": 1.65,
-          "net": -107.98,
-          "trades": 11
+          "net": -156.55,
+          "trades": 12
         },
         "slow": 28,
         "train": {
@@ -80,15 +80,15 @@
     ]
   },
   "results": {
-    "balance": 9439.54,
-    "equity_mark": 9404.25,
-    "losses": 19,
+    "balance": 9393.19,
+    "equity_mark": 9393.19,
+    "losses": 20,
     "max_closed_balance_drawdown_pct": 6.14,
-    "net_realized": -560.46,
-    "open_position": true,
-    "profit_factor": 0.359,
-    "trades": 25,
-    "win_rate_pct": 24.0,
+    "net_realized": -606.81,
+    "open_position": false,
+    "profit_factor": 0.341,
+    "trades": 26,
+    "win_rate_pct": 23.08,
     "wins": 6
   }
 }
