@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-23T20:16:36.034416+00:00"
+    "timestamp_utc": "2026-11-24T02:28:20.204204+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
   "ledger_sha256": "f25a224181064fc7a763e8bf247c0c092c6aa8780c33d563b44a20fb6db52ab7",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 202,
+  "processed_bars": 203,
   "research": {
     "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": {
@@ -81,7 +81,7 @@
   },
   "results": {
     "balance": 9439.54,
-    "equity_mark": 9418.24,
+    "equity_mark": 9404.25,
     "losses": 19,
     "max_closed_balance_drawdown_pct": 6.14,
     "net_realized": -560.46,
