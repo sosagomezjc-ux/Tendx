@@ -10,12 +10,12 @@
     "errors": [],
     "origin": "SYNTHETIC_GENERATED",
     "passed": true,
-    "timestamp_utc": "2026-11-26T22:27:00.657271+00:00"
+    "timestamp_utc": "2026-11-27T09:45:25.195836+00:00"
   },
   "kind": "SIMULATION_SYNTHETIC_NOT_BROKER",
-  "ledger_sha256": "60206500a5c315303b69b59b77ed562cdcf70c261184b52a375a6a7490f49342",
+  "ledger_sha256": "89e1f714e5db74f5ee03afb33d98c02c19c394626831911633e920068830db5a",
   "policy_sha256": "f20af52a163732b6f398f831334e5cfe20083809e6717d2c3bfaef68c2002a12",
-  "processed_bars": 210,
+  "processed_bars": 211,
   "research": {
     "holdout_note": "El test usa datos sintéticos no independientes económicamente de sus regímenes. No extrapolar.",
     "proposed": {
@@ -28,35 +28,35 @@
       {
         "fast": 7,
         "holdout": {
-          "dd_pct": 2.6,
-          "net": -251.99,
-          "trades": 14
+          "dd_pct": 3.0,
+          "net": -299.83,
+          "trades": 15
         },
         "slow": 24,
         "train": {
-          "net": -457.78,
-          "trades": 14
+          "net": -383.24,
+          "trades": 15
         }
       },
       {
         "fast": 5,
         "holdout": {
           "dd_pct": 2.83,
-          "net": -252.13,
+          "net": -252.1,
           "trades": 14
         },
         "slow": 22,
         "train": {
-          "net": -631.61,
-          "trades": 16
+          "net": -558.15,
+          "trades": 17
         }
       },
       {
         "fast": 10,
         "holdout": {
-          "dd_pct": 1.16,
-          "net": -55.43,
-          "trades": 12
+          "dd_pct": 1.64,
+          "net": -104.27,
+          "trades": 13
         },
         "slow": 32,
         "train": {
@@ -67,9 +67,9 @@
       {
         "fast": 8,
         "holdout": {
-          "dd_pct": 1.46,
-          "net": -108.19,
-          "trades": 11
+          "dd_pct": 1.87,
+          "net": -156.77,
+          "trades": 12
         },
         "slow": 28,
         "train": {
@@ -80,15 +80,15 @@
     ]
   },
   "results": {
-    "balance": 9393.19,
-    "equity_mark": 9392.06,
-    "losses": 20,
-    "max_closed_balance_drawdown_pct": 6.14,
-    "net_realized": -606.81,
-    "open_position": true,
-    "profit_factor": 0.341,
-    "trades": 26,
-    "win_rate_pct": 23.08,
+    "balance": 9347.06,
+    "equity_mark": 9347.06,
+    "losses": 21,
+    "max_closed_balance_drawdown_pct": 6.53,
+    "net_realized": -652.94,
+    "open_position": false,
+    "profit_factor": 0.324,
+    "trades": 27,
+    "win_rate_pct": 22.22,
     "wins": 6
   }
 }

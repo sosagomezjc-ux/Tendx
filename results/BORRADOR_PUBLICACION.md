@@ -1,8 +1,8 @@
-# Informe público EDGEGUARD — 26/11/2026 22:27 UTC
+# Informe público EDGEGUARD — 27/11/2026 09:45 UTC
 
 **SIMULACIÓN SOBRE PRECIOS SINTÉTICOS. NO ES CUENTA DE BRÓKER.**
 
-Agente operador: 26 operaciones simuladas cerradas; resultado realizado -606.81 USD_SIM. Balance simulado 9,393.19 USD_SIM. Drawdown máximo de balance cerrado 6.14 %. Tasa de acierto 23.08 %.
+Agente operador: 27 operaciones simuladas cerradas; resultado realizado -652.94 USD_SIM. Balance simulado 9,347.06 USD_SIM. Drawdown máximo de balance cerrado 6.53 %. Tasa de acierto 22.22 %.
 
 Agente auditor: APROBADO. Comprobaciones: conciliación de P&L, límites de riesgo de entrada, coherencia temporal, balance y equity, integridad de operaciones.
 
