@@ -10,9 +10,9 @@
     {
       "fast": 7,
       "holdout": {
-        "dd_pct": 3.0,
-        "net": -299.83,
-        "trades": 15
+        "dd_pct": 2.52,
+        "net": -251.99,
+        "trades": 14
       },
       "slow": 24,
       "train": {
@@ -24,7 +24,7 @@
       "fast": 5,
       "holdout": {
         "dd_pct": 2.83,
-        "net": -252.1,
+        "net": -252.01,
         "trades": 14
       },
       "slow": 22,
@@ -37,8 +37,8 @@
       "fast": 10,
       "holdout": {
         "dd_pct": 1.64,
-        "net": -104.27,
-        "trades": 13
+        "net": -55.97,
+        "trades": 12
       },
       "slow": 32,
       "train": {
